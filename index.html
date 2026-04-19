@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Food diary — 12–18 April 2026</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:15px;color:#1a1a1a;background:#f5f5f3;padding:2rem 1rem}
+.page{max-width:680px;margin:0 auto}
+h1{font-size:22px;font-weight:500;margin-bottom:.25rem}
+.sub{font-size:13px;color:#888;margin-bottom:.5rem}
+.note{font-size:13px;color:#c07000;background:#fff8ee;border:1px solid #f5d88a;border-radius:8px;padding:.75rem 1rem;margin-bottom:2rem}
+.sec{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:#aaa;margin-bottom:.75rem;margin-top:2rem}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:1.5rem}
+.mc{background:#fff;border:1px solid #e5e5e2;border-radius:10px;padding:.75rem;text-align:center}
+.mv{font-size:20px;font-weight:500}
+.ml{font-size:11px;color:#888;margin-top:2px}
+.mt{font-size:11px;color:#bbb;margin-top:1px}
+.targets-card{background:#fff;border:1px solid #e5e5e2;border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.5rem}
+.bar-wrap{margin-bottom:14px}
+.bar-row{display:flex;justify-content:space-between;font-size:13px;margin-bottom:5px}
+.bar-track{height:7px;background:#eeede9;border-radius:4px;overflow:hidden;margin-bottom:3px}
+.day-block{background:#fff;border:1px solid #e5e5e2;border-radius:10px;padding:1rem 1.25rem;margin-bottom:.6rem}
+.day-block.missing{background:#fafafa;border-color:#e5e5e2;opacity:.7}
+.day-hdr{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.75rem;padding-bottom:.5rem;border-bottom:1px solid #f0f0ee;flex-wrap:wrap;gap:4px}
+.day-name{font-size:14px;font-weight:500}
+.day-stats{font-size:12px;color:#888}
+.day-targets{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:10px}
+.dt{background:#f5f5f3;border-radius:6px;padding:5px 6px;text-align:center}
+.dt-val{font-size:13px;font-weight:500}
+.dt-lbl{font-size:10px;color:#aaa;margin-top:1px}
+.dt-bar{height:4px;background:#e5e5e2;border-radius:2px;margin-top:3px;overflow:hidden}
+.meal-lbl{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:#ccc;margin:10px 0 4px}
+.food-row{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px solid #f8f8f6}
+.food-row:last-child{border-bottom:none}
+.food-right{color:#888;flex-shrink:0;margin-left:1rem;text-align:right}
+.est{font-size:11px;color:#ccc;font-style:italic}
+.missing-msg{text-align:center;color:#bbb;font-size:13px;padding:1.5rem 0;font-style:italic}
+.legend{display:flex;gap:16px;margin-top:12px;font-size:11px;color:#aaa;flex-wrap:wrap}
+.ldot{width:10px;height:7px;border-radius:3px;display:inline-block;margin-right:4px;vertical-align:middle}
+.footer{margin-top:3rem;font-size:12px;color:#ccc;text-align:center;padding-bottom:2rem;border-top:1px solid #e5e5e2;padding-top:1.5rem}
+@media(max-width:500px){.grid4{grid-template-columns:repeat(2,1fr)}.day-targets{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<h1>Weekly food diary</h1>
+<div class="sub">12–18 April 2026 &nbsp;·&nbsp; Targets: 1,900 kcal &nbsp;·&nbsp; 130g protein &nbsp;·&nbsp; 188g carbs &nbsp;·&nbsp; 70g fat</div>
+<div class="note">⚠ This is the first tracked week. Data for Saturday 12 and Sunday 13 April is not available — logging began Monday 14 April.</div>
+
+<div class="sec">Week at a glance (5 logged days)</div>
+<div class="grid4">
+  <div class="mc"><div class="mv">1,943</div><div class="ml">avg kcal/day</div><div class="mt">target 1,900</div></div>
+  <div class="mc"><div class="mv">121g</div><div class="ml">avg protein/day</div><div class="mt">target 130g</div></div>
+  <div class="mc"><div class="mv">5/7</div><div class="ml">days logged</div><div class="mt">Mon–Fri</div></div>
+  <div class="mc"><div class="mv">4/5</div><div class="ml">days ≥117g protein</div><div class="mt">Wed rest day</div></div>
+</div>
+
+<div class="sec">Weekly targets (5 logged days vs 5-day target)</div>
+<div class="targets-card" id="targets"></div>
+
+<div class="sec">Saturday 12 April</div>
+<div class="day-block missing">
+  <div class="day-hdr"><span class="day-name">Saturday 12 April</span><span class="day-stats" style="color:#ccc">no data</span></div>
+  <div class="missing-msg">Data not available — logging had not yet begun</div>
+</div>
+
+<div class="sec">Sunday 13 April</div>
+<div class="day-block missing">
+  <div class="day-hdr"><span class="day-name">Sunday 13 April</span><span class="day-stats" style="color:#ccc">no data</span></div>
+  <div class="missing-msg">Data not available — logging had not yet begun</div>
+</div>
+
+<div class="sec">Monday 14 April &nbsp;·&nbsp; training day</div>
+<div class="day-block">
+  <div class="day-hdr"><span class="day-name">Monday 14 April</span><span class="day-stats">1,776 kcal &nbsp;·&nbsp; 121g protein</span></div>
+  <div class="day-targets" id="dt-mon"></div>
+  <div class="meal-lbl">Breakfast</div>
+  <div class="food-row"><span>Coop fiberhavregryn 60g + MyProtein soy isolate speculoos 35g + Alpro sojadryck osötad 125ml</span><span class="food-right">~431 kcal · 32g prot</span></div>
+  <div class="food-row"><span>Banana (medium), pineapple 300g, raspberries 150g, pumpkin seeds 15g</span><span class="food-right">~337 kcal · 9g prot</span></div>
+  <div class="meal-lbl">Lunch</div>
+  <div class="food-row"><span>Gul curry extra tofu, 3 tbsp rice — Ja Thai <span class="est">(estimated)</span></span><span class="food-right">~575 kcal · 25g prot</span></div>
+  <div class="meal-lbl">Snack</div>
+  <div class="food-row"><span>Barebells vegan caramel bar 55g</span><span class="food-right">210 kcal · 15g prot</span></div>
+  <div class="food-row"><span>Renée Voltaire ginger chews granatäpple ×5</span><span class="food-right">~120 kcal</span></div>
+  <div class="food-row"><span>White Monster Ultra</span><span class="food-right">~25 kcal</span></div>
+  <div class="meal-lbl">Dinner</div>
+  <div class="food-row"><span>Yipin tempeh original, whole 200g pack</span><span class="food-right">544 kcal · 40g prot</span></div>
+</div>
+
+<div class="sec">Tuesday 15 April &nbsp;·&nbsp; training day</div>
+<div class="day-block">
+  <div class="day-hdr"><span class="day-name">Tuesday 15 April</span><span class="day-stats">2,378 kcal &nbsp;·&nbsp; 133g protein</span></div>
+  <div class="day-targets" id="dt-tue"></div>
+  <div class="meal-lbl">Breakfast</div>
+  <div class="food-row"><span>Coop fiberhavregryn 60g + MyProtein soy isolate speculoos 35g + Alpro sojadryck osötad 125ml</span><span class="food-right">~431 kcal · 32g prot</span></div>
+  <div class="food-row"><span>Banana (medium), pineapple 300g, raspberries 150g, pumpkin seeds 15g</span><span class="food-right">~337 kcal · 9g prot</span></div>
+  <div class="meal-lbl">Lunch</div>
+  <div class="food-row"><span>Seitan kebab with extra seitan — Sustainaboule <span class="est">(estimated)</span></span><span class="food-right">~911 kcal · 59g prot</span></div>
+  <div class="meal-lbl">Snack</div>
+  <div class="food-row"><span>Barebells vegan caramel bar 55g</span><span class="food-right">210 kcal · 15g prot</span></div>
+  <div class="food-row"><span>Renée Voltaire ginger chews granatäpple ×5</span><span class="food-right">~120 kcal</span></div>
+  <div class="food-row"><span>White Monster Ultra</span><span class="food-right">~25 kcal</span></div>
+  <div class="meal-lbl">Dinner</div>
+  <div class="food-row"><span>Green curry extra tofu, half rice — Hinade Wok <span class="est">(estimated)</span></span><span class="food-right">~410 kcal · 18g prot</span></div>
+</div>
+
+<div class="sec">Wednesday 16 April &nbsp;·&nbsp; rest day</div>
+<div class="day-block">
+  <div class="day-hdr"><span class="day-name">Wednesday 16 April</span><span class="day-stats">1,155 kcal &nbsp;·&nbsp; 64g protein &nbsp;·&nbsp; <em style="color:#aaa">rest day</em></span></div>
+  <div class="day-targets" id="dt-wed"></div>
+  <div class="meal-lbl">Breakfast</div>
+  <div class="food-row"><span>Smoothie — frozen mango 280g, blueberries 95g, BSc plant protein double chocolate 35g, chia seeds 10g, Alpro sojadryck osötad 75ml</span><span class="food-right">~440 kcal · 24g prot</span></div>
+  <div class="meal-lbl">Lunch</div>
+  <div class="food-row"><span>La Molisana fusilli 125g dry, TVP 100g, arrabiata sauce 390g — approx ⅓ of total dish</span><span class="food-right">~305 kcal · 22g prot</span></div>
+  <div class="meal-lbl">Dinner</div>
+  <div class="food-row"><span>Green curry extra tofu, half rice — Hinade Wok <span class="est">(estimated)</span></span><span class="food-right">~410 kcal · 18g prot</span></div>
+  <div class="food-row"><span>White Monster Ultra</span><span class="food-right">~25 kcal</span></div>
+</div>
+
+<div class="sec">Thursday 17 April &nbsp;·&nbsp; training day</div>
+<div class="day-block">
+  <div class="day-hdr"><span class="day-name">Thursday 17 April</span><span class="day-stats">1,780 kcal &nbsp;·&nbsp; 128g protein</span></div>
+  <div class="day-targets" id="dt-thu"></div>
+  <div class="meal-lbl">Breakfast</div>
+  <div class="food-row"><span>Coop havrekuddar 35g + Alpro sojadryck osötad 125ml</span><span class="food-right">176 kcal · 9g prot</span></div>
+  <div class="food-row"><span>Banana (medium), pineapple 300g, raspberries 150g</span><span class="food-right">~350 kcal · 5g prot</span></div>
+  <div class="meal-lbl">Lunch</div>
+  <div class="food-row"><span>Gul curry extra tofu, 3 tbsp rice — Ja Thai <span class="est">(estimated)</span></span><span class="food-right">~575 kcal · 25g prot</span></div>
+  <div class="meal-lbl">Snack</div>
+  <div class="food-row"><span>Barebells vegan caramel bar 55g</span><span class="food-right">210 kcal · 15g prot</span></div>
+  <div class="food-row"><span>Renée Voltaire ginger chews granatäpple ×5</span><span class="food-right">~120 kcal</span></div>
+  <div class="food-row"><span>White Monster Ultra</span><span class="food-right">~25 kcal</span></div>
+  <div class="meal-lbl">Dinner</div>
+  <div class="food-row"><span>Homemade seitan 1 serving</span><span class="food-right">275 kcal · 52g prot</span></div>
+  <div class="food-row"><span>Quorn strips 130g + broccoli 150g</span><span class="food-right">~214 kcal · 22g prot</span></div>
+</div>
+
+<div class="sec">Friday 18 April &nbsp;·&nbsp; training day</div>
+<div class="day-block">
+  <div class="day-hdr"><span class="day-name">Friday 18 April</span><span class="day-stats">~2,600 kcal &nbsp;·&nbsp; ~165g protein</span></div>
+  <div class="day-targets" id="dt-fri"></div>
+  <div class="meal-lbl">Breakfast</div>
+  <div class="food-row"><span>Coop havrekuddar 35g + Alpro sojadryck osötad 125ml</span><span class="food-right">176 kcal · 9g prot</span></div>
+  <div class="food-row"><span>Banana (medium), pineapple 300g, raspberries 150g</span><span class="food-right">~350 kcal · 5g prot</span></div>
+  <div class="meal-lbl">Lunch</div>
+  <div class="food-row"><span>Bastard Burgers double green burger (MBoom pea protein) <span class="est">(estimated)</span></span><span class="food-right">~750 kcal · 30g prot</span></div>
+  <div class="food-row"><span>Vegan chili cheese bites — Bastard Burgers <span class="est">(estimated)</span></span><span class="food-right">~325 kcal</span></div>
+  <div class="meal-lbl">Snack</div>
+  <div class="food-row"><span>Delicato chokladboll (Delicatoboll) 58g</span><span class="food-right">~278 kcal</span></div>
+  <div class="food-row"><span>Renée Voltaire ginger chews granatäpple ×5</span><span class="food-right">~120 kcal</span></div>
+  <div class="food-row"><span>White Monster Ultra</span><span class="food-right">~25 kcal</span></div>
+  <div class="meal-lbl">Dinner</div>
+  <div class="food-row"><span>Schysst käk vegokebab, whole 350g pack</span><span class="food-right">721 kcal · 94g prot</span></div>
+</div>
+
+<div class="footer">
+  Estimates marked <em>(estimated)</em> — restaurant meals based on portion size and description &nbsp;·&nbsp; All other values from product labels or recipe calculation<br>
+  Daily target: 1,900 kcal &nbsp;·&nbsp; 130g protein &nbsp;·&nbsp; 188g carbs &nbsp;·&nbsp; 70g fat<br>
+  Generated 19 April 2026 &nbsp;·&nbsp; Reporting period: Sat 12 – Fri 18 April 2026
+</div>
+
+</div>
+
+<script>
+var TARGET_K = 1900, TARGET_P = 130, TARGET_C = 188, TARGET_F = 70;
+
+var days = [
+  {id:'dt-mon', kcal:1776, prot:121, carbs:180, fat:46},
+  {id:'dt-tue', kcal:2378, prot:133, carbs:210, fat:55},
+  {id:'dt-wed', kcal:1155, prot:64,  carbs:120, fat:30},
+  {id:'dt-thu', kcal:1780, prot:128, carbs:175, fat:48},
+  {id:'dt-fri', kcal:2600, prot:165, carbs:205, fat:60},
+];
+
+days.forEach(function(d) {
+  var el = document.getElementById(d.id);
+  if (!el) return;
+  var items = [
+    {label:'Calories', val:d.kcal, target:TARGET_K, unit:'kcal', color:'#1a1a1a'},
+    {label:'Protein',  val:d.prot, target:TARGET_P, unit:'g',    color:'#5DCAA5'},
+    {label:'Carbs',    val:d.carbs,target:TARGET_C, unit:'g',    color:'#7F77DD'},
+    {label:'Fat',      val:d.fat,  target:TARGET_F, unit:'g',    color:'#EF9F27'},
+  ];
+  var html = '';
+  items.forEach(function(item) {
+    var pct = Math.min(Math.round(item.val/item.target*100), 108);
+    var over = item.val > item.target;
+    var fillColor = over ? '#D85A30' : item.color;
+    html += '<div class="dt">';
+    html += '<div class="dt-val">'+item.val+'<span style="font-size:10px;font-weight:400;color:#aaa">'+item.unit+'</span></div>';
+    html += '<div class="dt-lbl">'+item.label+' / '+item.target+item.unit+'</div>';
+    html += '<div class="dt-bar"><div style="height:100%;width:'+pct+'%;background:'+fillColor+';border-radius:2px"></div></div>';
+    html += '</div>';
+  });
+  el.innerHTML = html;
+});
+
+var nutrients = [
+  {label:'Calories', actual:9689, target:TARGET_K*5, unit:'kcal', color:'#1a1a1a'},
+  {label:'Protein',  actual:611,  target:TARGET_P*5, unit:'g',    color:'#5DCAA5'},
+  {label:'Carbs',    actual:890,  target:TARGET_C*5, unit:'g',    color:'#7F77DD'},
+  {label:'Fat',      actual:239,  target:TARGET_F*5, unit:'g',    color:'#EF9F27'},
+];
+
+var html = '<div style="font-size:12px;color:#aaa;margin-bottom:14px">5 logged days vs 5-day targets — Sat 12 &amp; Sun 13 April excluded (no data)</div>';
+nutrients.forEach(function(n) {
+  var pct = Math.min(Math.round(n.actual/n.target*100), 108);
+  var over = n.actual > n.target;
+  html += '<div class="bar-wrap">';
+  html += '<div class="bar-row"><span style="font-weight:500">'+n.label+'</span>';
+  html += '<span style="color:#888">'+n.actual.toLocaleString()+' / '+n.target.toLocaleString()+' '+n.unit+' <span style="color:#bbb">('+pct+'%)</span></span></div>';
+  html += '<div class="bar-track"><div style="height:100%;border-radius:4px;width:'+pct+'%;background:'+(over?'#D85A30':n.color)+'"></div></div>';
+  html += '</div>';
+});
+html += '<div class="legend">';
+html += '<span><span class="ldot" style="background:#1a1a1a"></span>Calories</span>';
+html += '<span><span class="ldot" style="background:#5DCAA5"></span>Protein</span>';
+html += '<span><span class="ldot" style="background:#7F77DD"></span>Carbs</span>';
+html += '<span><span class="ldot" style="background:#EF9F27"></span>Fat</span>';
+html += '<span><span class="ldot" style="background:#D85A30"></span>Over target</span>';
+html += '</div>';
+document.getElementById('targets').innerHTML = html;
+</script>
+</body>
+</html>
