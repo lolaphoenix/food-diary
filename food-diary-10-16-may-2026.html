@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Food diary — 10–16 May 2026</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:15px;color:#1a1a1a;background:#f5f5f3;padding:2rem 1rem}
+.page{max-width:680px;margin:0 auto}
+h1{font-size:22px;font-weight:500;margin-bottom:.25rem}
+.sub{font-size:13px;color:#888;margin-bottom:2rem}
+.sec{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:#aaa;margin-bottom:.75rem;margin-top:2rem}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:1.5rem}
+.mc{background:#fff;border:1px solid #e5e5e2;border-radius:10px;padding:.75rem;text-align:center}
+.mv{font-size:20px;font-weight:500}
+.ml{font-size:11px;color:#888;margin-top:2px}
+.mt{font-size:11px;color:#bbb;margin-top:1px}
+.targets-card{background:#fff;border:1px solid #e5e5e2;border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.5rem}
+.bar-track{height:7px;background:#eeede9;border-radius:4px;overflow:hidden;margin-bottom:4px}
+.day-block{background:#fff;border:1px solid #e5e5e2;border-radius:10px;padding:1rem 1.25rem;margin-bottom:.6rem}
+.day-hdr{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.75rem;padding-bottom:.5rem;border-bottom:1px solid #f0f0ee;flex-wrap:wrap;gap:4px}
+.day-name{font-size:14px;font-weight:500}
+.day-stats{font-size:12px;color:#888}
+.day-targets{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:10px}
+.dt{background:#f5f5f3;border-radius:6px;padding:5px 6px;text-align:center}
+.dt-val{font-size:13px;font-weight:500}
+.dt-lbl{font-size:10px;color:#aaa;margin-top:1px}
+.dt-bar{height:4px;background:#e5e5e2;border-radius:2px;margin-top:3px;overflow:hidden}
+.meal-lbl{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:#ccc;margin:10px 0 4px}
+.food-row{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px solid #f8f8f6}
+.food-row:last-child{border-bottom:none}
+.food-right{color:#888;flex-shrink:0;margin-left:1rem;text-align:right}
+.est{font-size:11px;color:#ccc;font-style:italic}
+.weight-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:.5rem}
+.wday{background:#fff;border:1px solid #e5e5e2;border-radius:8px;padding:.5rem .25rem;text-align:center}
+.wval{font-size:13px;font-weight:500}
+.wlbl{font-size:10px;color:#aaa;margin-top:2px}
+.step-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:1rem}
+.sday{background:#fff;border:1px solid #e5e5e2;border-radius:8px;padding:.5rem .25rem;text-align:center}
+.sval{font-size:12px;font-weight:500}
+.slbl{font-size:10px;color:#aaa;margin-top:2px}
+.supplements{background:#fff;border:1px solid #e5e5e2;border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem}
+.legend{display:flex;gap:16px;margin-top:12px;font-size:11px;color:#aaa;flex-wrap:wrap}
+.ldot{width:10px;height:7px;border-radius:3px;display:inline-block;margin-right:4px;vertical-align:middle}
+.footer{margin-top:3rem;font-size:12px;color:#ccc;text-align:center;padding-bottom:2rem;border-top:1px solid #e5e5e2;padding-top:1.5rem}
+@media(max-width:500px){.grid4{grid-template-columns:repeat(2,1fr)}.day-targets{grid-template-columns:repeat(2,1fr)}.weight-grid,.step-grid{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<h1>Weekly food diary</h1>
+<div class="sub">10–16 May 2026 &nbsp;·&nbsp; Targets: 1,900 kcal &nbsp;·&nbsp; 130g protein &nbsp;·&nbsp; 188g carbs &nbsp;·&nbsp; 70g fat</div>
+
+<div class="sec">Supplements (daily)</div>
+<div class="supplements">
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;font-size:13px">
+    <div><strong>Algae Omega-3</strong><br><span style="color:#888;font-size:12px">1 capsule · 410mg omega-3 · 250mg DHA · 125mg EPA</span></div>
+    <div><strong>Vitamin D</strong><br><span style="color:#888;font-size:12px">20 micrograms (800 IU) daily</span></div>
+    <div><strong>B12</strong><br><span style="color:#888;font-size:12px">Via Monster Ultra + MyProtein clear vegan protein (~300% RDI/day combined)</span></div>
+  </div>
+</div>
+
+<div class="sec">Weight trend</div>
+<div class="weight-grid">
+  <div class="wday"><div class="wval">74.65</div><div class="wlbl">Sun 10</div></div>
+  <div class="wday"><div class="wval">73.80</div><div class="wlbl">Mon 11</div></div>
+  <div class="wday"><div class="wval">73.95</div><div class="wlbl">Tue 12</div></div>
+  <div class="wday"><div class="wval">74.65</div><div class="wlbl">Wed 13</div></div>
+  <div class="wday"><div class="wval" style="color:#aaa">—</div><div class="wlbl">Thu 14</div></div>
+  <div class="wday"><div class="wval">73.70</div><div class="wlbl">Fri 15</div></div>
+  <div class="wday"><div class="wval">73.65</div><div class="wlbl">Sat 16</div></div>
+</div>
+
+<div class="sec">Step count</div>
+<div class="step-grid">
+  <div class="sday"><div class="sval">10,519</div><div class="slbl">Sun 10</div></div>
+  <div class="sday"><div class="sval">15,032</div><div class="slbl">Mon 11</div></div>
+  <div class="sday"><div class="sval">19,619</div><div class="slbl">Tue 12</div></div>
+  <div class="sday"><div class="sval">22,197</div><div class="slbl">Wed 13</div></div>
+  <div class="sday"><div class="sval">~14,070</div><div class="slbl">Thu 14 <span style="font-size:9px;color:#bbb">+est.</span></div></div>
+  <div class="sday"><div class="sval">~10,008</div><div class="slbl">Fri 15 <span style="font-size:9px;color:#bbb">est.</span></div></div>
+  <div class="sday"><div class="sval">15,522</div><div class="slbl">Sat 16</div></div>
+</div>
+
+<div class="sec">Week at a glance (7 logged days)</div>
+<div class="grid4">
+  <div class="mc"><div class="mv">1,888</div><div class="ml">avg kcal/day</div><div class="mt">target 1,900</div></div>
+  <div class="mc"><div class="mv">109g</div><div class="ml">avg protein/day</div><div class="mt">target 130g</div></div>
+  <div class="mc"><div class="mv">7/7</div><div class="ml">days logged</div><div class="mt">full week</div></div>
+  <div class="mc"><div class="mv">15,281</div><div class="ml">avg steps/day</div><div class="mt">full week</div></div>
+</div>
+
+<div class="sec">Weekly targets</div>
+<div class="targets-card" id="targets"></div>
+
+<div class="sec">Sunday 10 May &nbsp;·&nbsp; weekend</div>
+<div class="day-block">
+  <div class="day-hdr"><span class="day-name">Sunday 10 May &nbsp;·&nbsp; 74.65kg &nbsp;·&nbsp; 10,519 steps</span><span class="day-stats">~1,697 kcal &nbsp;·&nbsp; ~77g protein</span></div>
+  <div class="day-targets" id="dt-sun10"></div>
+  <div class="meal-lbl">Morning</div>
+  <div class="food-row"><span>Havrekuddar 60g + Alpro sojadryck osötad 125ml</span><span class="food-right">~273 kcal · 12g prot</span></div>
+  <div class="food-row"><span>God Morgon blood orange juice 150ml + MyProtein clear vegan protein 3 scoops</span><span class="food-right">~218 kcal · 30g prot</span></div>
+  <div class="food-row"><span>Monster Ultra Rosa</span><span class="food-right">~15 kcal</span></div>
+  <div class="meal-lbl">Brunch</div>
+  <div class="food-row"><span>Espresso House vegan avocado bagel <span class="est">(estimated)</span></span><span class="food-right">~490 kcal · 10g prot</span></div>
+  <div class="meal-lbl">Snacks</div>
+  <div class="food-row"><span>Raspberries 200g + strawberries 200g</span><span class="food-right">~168 kcal · 3.7g prot</span></div>
+  <div class="food-row"><span>Homemade chocolate chip cookie ×1</span><span class="food-right">~155 kcal · 1.5g prot</span></div>
+  <div class="meal-lbl">Evening</div>
+  <div class="food-row"><span>Havrekuddar 60g + Alpro sojadryck osötad 125ml</span><span class="food-right">~273 kcal · 12g prot</span></div>
+</div>
+
+<div class="sec">Monday 11 May &nbsp;·&nbsp; training day</div>
+<div class="day-block">
+  <div class="day-hdr"><span class="day-name">Monday 11 May &nbsp;·&nbsp; 73.80kg &nbsp;·&nbsp; 15,032 steps</span><span class="day-stats">~1,748 kcal &nbsp;·&nbsp; ~148g protein</span></div>
+  <div class="day-targets" id="dt-mon11"></div>
+  <div class="meal-lbl">Morning</div>
+  <div class="food-row"><span>Havrekuddar 60g + Alpro plant protein chocolate 125ml</span><span class="food-right">~359 kcal · 18g prot</span></div>
+  <div class="food-row"><span>God Morgon blood orange juice 150ml + MyProtein clear vegan protein 3 scoops</span><span class="food-right">~218 kcal · 30g prot</span></div>
+  <div class="food-row"><span>Watermelon 300g + Monster Ultra Rosa</span><span class="food-right">~105 kcal · 1.8g prot</span></div>
+  <div class="meal-lbl">Lunch</div>
+  <div class="food-row"><span>Blue Dragon miso soup + Coop bokspånsrökt tofu 180g + pear + plum</span><span class="food-right">~412 kcal · 30g prot</span></div>
+  <div class="meal-lbl">Snack</div>
+  <div class="food-row"><span>Barebells vegan caramel bar</span><span class="food-right">210 kcal · 15g prot</span></div>
+  <div class="meal-lbl">Dinner</div>
+  <div class="food-row"><span>Farmers & Chefs minestrone soup 225g + Schysst käk vegokebab 175g</span><span class="food-right">~474 kcal · 50g prot</span></div>
+</div>
+
+<div class="sec">Tuesday 12 May &nbsp;·&nbsp; training day</div>
+<div class="day-block">
+  <div class="day-hdr"><span class="day-name">Tuesday 12 May &nbsp;·&nbsp; 73.95kg &nbsp;·&nbsp; 19,619 steps</span><span class="day-stats">~1,929 kcal &nbsp;·&nbsp; ~154g protein</span></div>
+  <div class="day-targets" id="dt-tue12"></div>
+  <div class="meal-lbl">Morning</div>
+  <div class="food-row"><span>Havrekuddar 60g + Alpro sojadryck osötad 125ml</span><span class="food-right">~273 kcal · 12g prot</span></div>
+  <div class="food-row"><span>God Morgon blood orange juice 150ml + MyProtein clear vegan protein 3 scoops</span><span class="food-right">~218 kcal · 30g prot</span></div>
+  <div class="food-row"><span>Raspberries 150g + pineapple 300g + Monster Ultra Rosa</span><span class="food-right">~258 kcal · 3g prot</span></div>
+  <div class="meal-lbl">Lunch</div>
+  <div class="food-row"><span>Gul curry extra tofu, 3 tbsp rice — Ja Thai <span class="est">(estimated)</span></span><span class="food-right">~575 kcal · 25g prot</span></div>
+  <div class="meal-lbl">Dinner</div>
+  <div class="food-row"><span>Homemade seitan 1/6 serving (air fried)</span><span class="food-right">~420 kcal · 76g prot</span></div>
+</div>
+
+<div class="sec">Wednesday 13 May &nbsp;·&nbsp; training day</div>
+<div class="day-block">
+  <div class="day-hdr"><span class="day-name">Wednesday 13 May &nbsp;·&nbsp; 74.65kg &nbsp;·&nbsp; 22,197 steps</span><span class="day-stats">~1,874 kcal &nbsp;·&nbsp; ~96g protein</span></div>
+  <div class="day-targets" id="dt-wed13"></div>
+  <div class="meal-lbl">Morning</div>
+  <div class="food-row"><span>Havrekuddar 60g + Alpro sojadryck osötad 125ml</span><span class="food-right">~273 kcal · 12g prot</span></div>
+  <div class="food-row"><span>God Morgon blood orange juice 150ml + MyProtein clear vegan protein 3 scoops</span><span class="food-right">~218 kcal · 30g prot</span></div>
+  <div class="food-row"><span>Raspberries 150g + pineapple 300g + Monster Ultra Rosa</span><span class="food-right">~258 kcal · 3g prot</span></div>
+  <div class="meal-lbl">Lunch</div>
+  <div class="food-row"><span>Gul curry extra tofu, 3 tbsp rice — Ja Thai <span class="est">(estimated)</span></span><span class="food-right">~575 kcal · 25g prot</span></div>
+  <div class="meal-lbl">Dinner</div>
+  <div class="food-row"><span>Subway No Chicken Teriyaki 15cm + lettuce, tomato, pickles, spicy chipotle <span class="est">(estimated)</span></span><span class="food-right">~430 kcal · 18g prot</span></div>
+  <div class="food-row"><span>Havrekuddar 60g + Alpro sojadryck osötad 125ml (evening)</span><span class="food-right">~273 kcal · 12g prot</span></div>
+</div>
+
+<div class="sec">Thursday 14 May &nbsp;·&nbsp; rest day · tattoo</div>
+<div class="day-block">
+  <div class="day-hdr"><span class="day-name">Thursday 14 May &nbsp;·&nbsp; no weight &nbsp;·&nbsp; ~14,070 steps</span><span class="day-stats">~2,244 kcal &nbsp;·&nbsp; ~74g protein</span></div>
+  <div class="day-targets" id="dt-thu14"></div>
+  <div class="meal-lbl">Morning</div>
+  <div class="food-row"><span>Havrekuddar 60g + Alpro sojadryck osötad 125ml</span><span class="food-right">~273 kcal · 12g prot</span></div>
+  <div class="food-row"><span>God Morgon blood orange juice 150ml + MyProtein clear vegan protein 3 scoops</span><span class="food-right">~218 kcal · 30g prot</span></div>
+  <div class="food-row"><span>Monster Ultra Rosa</span><span class="food-right">~15 kcal</span></div>
+  <div class="meal-lbl">Lunch/Dinner</div>
+  <div class="food-row"><span>Phil's Burger — fried artichoke starter + artichoke burger (no cheese) + fries <span class="est">(estimated)</span></span><span class="food-right">~1,500 kcal · 26g prot</span></div>
+  <div class="meal-lbl">Snack</div>
+  <div class="food-row"><span>Apple + peanut butter ~20g</span><span class="food-right">~213 kcal · 5.5g prot</span></div>
+</div>
+
+<div class="sec">Friday 15 May &nbsp;·&nbsp; training day</div>
+<div class="day-block">
+  <div class="day-hdr"><span class="day-name">Friday 15 May &nbsp;·&nbsp; 73.70kg &nbsp;·&nbsp; ~10,008 steps <span style="font-size:11px;color:#bbb">(Garmin away, estimated)</span></span><span class="day-stats">~1,889 kcal &nbsp;·&nbsp; ~161g protein</span></div>
+  <div class="day-targets" id="dt-fri15"></div>
+  <div class="meal-lbl">Morning</div>
+  <div class="food-row"><span>Havrekuddar 60g + Alpro sojadryck osötad 125ml</span><span class="food-right">~273 kcal · 12g prot</span></div>
+  <div class="food-row"><span>MyProtein clear vegan protein 3 scoops in water</span><span class="food-right">~153 kcal · 30g prot</span></div>
+  <div class="food-row"><span>Raspberries 150g + pineapple 300g + Monster Ultra Rosa</span><span class="food-right">~258 kcal · 3g prot</span></div>
+  <div class="meal-lbl">Lunch</div>
+  <div class="food-row"><span>Gul curry extra tofu, 3 tbsp rice — Ja Thai <span class="est">(estimated)</span></span><span class="food-right">~575 kcal · 25g prot</span></div>
+  <div class="meal-lbl">Snack</div>
+  <div class="food-row"><span>Barebells vegan caramel bar</span><span class="food-right">210 kcal · 15g prot</span></div>
+  <div class="meal-lbl">Dinner</div>
+  <div class="food-row"><span>Homemade seitan 1/6 serving (air fried)</span><span class="food-right">~420 kcal · 76g prot</span></div>
+</div>
+
+<div class="sec">Saturday 16 May &nbsp;·&nbsp; weekend</div>
+<div class="day-block">
+  <div class="day-hdr"><span class="day-name">Saturday 16 May &nbsp;·&nbsp; 73.65kg &nbsp;·&nbsp; 15,522 steps</span><span class="day-stats">~2,145 kcal &nbsp;·&nbsp; ~116g protein</span></div>
+  <div class="day-targets" id="dt-sat16"></div>
+  <div class="meal-lbl">Morning</div>
+  <div class="food-row"><span>Alpro sojadryck osötad 125ml</span><span class="food-right">~41 kcal · 4g prot</span></div>
+  <div class="food-row"><span>MyProtein clear vegan protein 3 scoops in water</span><span class="food-right">~153 kcal · 30g prot</span></div>
+  <div class="food-row"><span>Monster Ultra Rosa</span><span class="food-right">~15 kcal</span></div>
+  <div class="meal-lbl">Lunch</div>
+  <div class="food-row"><span>Din Din Club Kahuna Matata + extra tofu <span class="est">(estimated)</span></span><span class="food-right">~966 kcal · 48g prot</span></div>
+  <div class="meal-lbl">Dinner</div>
+  <div class="food-row"><span>Bastard Burgers double green burger + vegan chili cheese <span class="est">(estimated)</span></span><span class="food-right">~850 kcal · 33g prot</span></div>
+  <div class="meal-lbl">Dessert</div>
+  <div class="food-row"><span>Mango & lemon sorbet <span class="est">(estimated)</span></span><span class="food-right">~120 kcal · 0.5g prot</span></div>
+</div>
+
+<div class="footer">
+  Estimates marked <em>(estimated)</em> — restaurant meals based on portion size and description &nbsp;·&nbsp; All other values from product labels or recipe calculation<br>
+  Daily targets: 1,900 kcal &nbsp;·&nbsp; 130g protein &nbsp;·&nbsp; 188g carbs &nbsp;·&nbsp; 70g fat &nbsp;·&nbsp; Maintenance protein threshold: 117g (1.6g/kg at 73kg)<br>
+  Step counts: Thu estimated +1,000 missing steps · Fri estimated (Garmin away)<br>
+  Generated 16 May 2026 &nbsp;·&nbsp; Reporting period: Sun 10 – Sat 16 May 2026
+</div>
+
+</div>
+
+<script>
+var TARGET_K=1900, TARGET_P=130, TARGET_C=188, TARGET_F=70;
+
+var days=[
+  {id:'dt-sun10', kcal:1697, prot:77,  carbs:195, fat:38},
+  {id:'dt-mon11', kcal:1748, prot:148, carbs:145, fat:42},
+  {id:'dt-tue12', kcal:1929, prot:154, carbs:170, fat:38},
+  {id:'dt-wed13', kcal:1874, prot:96,  carbs:200, fat:40},
+  {id:'dt-thu14', kcal:2244, prot:74,  carbs:195, fat:72},
+  {id:'dt-fri15', kcal:1889, prot:161, carbs:165, fat:40},
+  {id:'dt-sat16', kcal:2145, prot:116, carbs:185, fat:65},
+];
+
+days.forEach(function(d){
+  var el=document.getElementById(d.id);
+  if(!el)return;
+  var items=[
+    {label:'Calories',val:d.kcal,target:TARGET_K,unit:'kcal',color:'#1a1a1a'},
+    {label:'Protein', val:d.prot,target:TARGET_P,unit:'g',   color:'#5DCAA5'},
+    {label:'Carbs',   val:d.carbs,target:TARGET_C,unit:'g',  color:'#7F77DD'},
+    {label:'Fat',     val:d.fat, target:TARGET_F,unit:'g',   color:'#EF9F27'},
+  ];
+  var html='';
+  items.forEach(function(item){
+    var pct=Math.min(Math.round(item.val/item.target*100),108);
+    var over=item.val>item.target;
+    html+='<div class="dt">';
+    html+='<div class="dt-val">'+item.val+'<span style="font-size:10px;font-weight:400;color:#aaa">'+item.unit+'</span></div>';
+    html+='<div class="dt-lbl">'+item.label+' / '+item.target+item.unit+'</div>';
+    html+='<div class="dt-bar"><div style="height:100%;width:'+pct+'%;background:'+(over?'#D85A30':item.color)+';border-radius:2px"></div></div>';
+    html+='</div>';
+  });
+  el.innerHTML=html;
+});
+
+var nutrients=[
+  {label:'Calories',actual:13526,target:TARGET_K*7,unit:'kcal',color:'#1a1a1a'},
+  {label:'Protein', actual:826,  target:TARGET_P*7,unit:'g',   color:'#5DCAA5'},
+  {label:'Carbs',   actual:1255, target:TARGET_C*7,unit:'g',   color:'#7F77DD'},
+  {label:'Fat',     actual:335,  target:TARGET_F*7,unit:'g',   color:'#EF9F27'},
+];
+
+var html='<div style="font-size:12px;color:#aaa;margin-bottom:14px">7-day totals vs weekly targets</div>';
+nutrients.forEach(function(n){
+  var pct=Math.min(Math.round(n.actual/n.target*100),108);
+  var over=n.actual>n.target;
+  html+='<div style="margin-bottom:14px">';
+  html+='<div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:5px">';
+  html+='<span style="font-weight:500">'+n.label+'</span>';
+  html+='<span style="color:#888">'+n.actual.toLocaleString()+' / '+n.target.toLocaleString()+' '+n.unit+' <span style="color:#bbb">('+pct+'%)</span></span></div>';
+  html+='<div class="bar-track"><div style="height:100%;border-radius:4px;width:'+pct+'%;background:'+(over?'#D85A30':n.color)+'"></div></div>';
+  html+='</div>';
+});
+html+='<div class="legend">';
+html+='<span><span class="ldot" style="background:#1a1a1a"></span>Calories</span>';
+html+='<span><span class="ldot" style="background:#5DCAA5"></span>Protein</span>';
+html+='<span><span class="ldot" style="background:#7F77DD"></span>Carbs</span>';
+html+='<span><span class="ldot" style="background:#EF9F27"></span>Fat</span>';
+html+='<span><span class="ldot" style="background:#D85A30"></span>Over target</span>';
+html+='</div>';
+document.getElementById('targets').innerHTML=html;
+</script>
+</body>
+</html>
